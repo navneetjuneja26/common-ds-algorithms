@@ -15,6 +15,20 @@ public class EmployeeLList {
         return temp;
     }
 
+    public EmployeeNode removeLast() {
+        EmployeeNode ptr = head;
+        EmployeeNode preptr = null;
+        while(ptr.getNext() != null) {
+            preptr = ptr;
+            ptr = ptr.getNext();
+        }
+        EmployeeNode temp = ptr;
+        if(ptr.getNext() == null) {
+            preptr.setNext(null);
+        }
+        return temp;
+    }
+
     public EmployeeNode getHead() {
         return head;
     }

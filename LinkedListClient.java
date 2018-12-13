@@ -17,5 +17,7 @@ public class LinkedListClient {
         System.out.println("Is my list empty ? " + isListEmpty);
         EmployeeNode employee = list.removeFirst();
         System.out.println("Removal of the first employee" + employee);
+        EmployeeNode lastNode = list.removeLast();
+        System.out.println("Removal of the last employee"  + lastNode);
     }
 }
