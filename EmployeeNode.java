@@ -1,6 +1,6 @@
 public class EmployeeNode {
-    public Employee e;
-    public EmployeeNode next;
+    private Employee e;
+    private EmployeeNode next;
 
     public EmployeeNode(Employee e) {
         this.e = e;

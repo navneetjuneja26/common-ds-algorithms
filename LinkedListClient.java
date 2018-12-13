@@ -1,5 +1,3 @@
-import java.util.LinkedList;
-
 public class LinkedListClient {
     public static void main(String[] args) {
         Employee prateek = new Employee("Prateek","Madaan",1);
@@ -12,5 +10,12 @@ public class LinkedListClient {
         list.addFirst(harsh);
         list.addFirst(xyz);
         list.printList();
+        System.out.println(list.getHead());
+        int length_of_list =list.countNodes();
+        System.out.println("Length of my list is" + length_of_list);
+        boolean isListEmpty =  list.isEmpty();
+        System.out.println("Is my list empty ? " + isListEmpty);
+        EmployeeNode employee = list.removeFirst();
+        System.out.println("Removal of the first employee" + employee);
     }
 }
