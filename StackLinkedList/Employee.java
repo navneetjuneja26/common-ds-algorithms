@@ -1,4 +1,4 @@
-package JDKImplementations;
+package JDKImplementations.StackLinkedList;
 
 import java.util.Objects;
 
@@ -51,4 +51,8 @@ public class Employee {
     public int hashCode() {
         return Objects.hash(firstname, lastname, id);
     }
+
+
+
+
 }
