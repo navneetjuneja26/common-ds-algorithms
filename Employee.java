@@ -1,5 +1,3 @@
-package JDKImplementations;
-
 import java.util.Objects;
 
 public class Employee {
@@ -43,12 +41,21 @@ public class Employee {
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
         return id == employee.id &&
-                Objects.equals(firstname, employee.firstname) &&
-                Objects.equals(lastname, employee.lastname);
+                firstname.equals(employee.firstname) &&
+                lastname.equals(employee.lastname);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(firstname, lastname, id);
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", id=" + id +
+                '}';
     }
 }
