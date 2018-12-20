@@ -13,5 +13,20 @@ public class Tree {
         }
 
     }
+    public void inorder() {
+        if(root != null) {
+            root.inorder();
+        }
+    }
+    public void preorder() {
+        if(root != null) {
+            root.preorder();
+        }
+    }
+    public void postorder() {
+        if(root != null) {
+            root.postorder();
+        }
+    }
 
 }

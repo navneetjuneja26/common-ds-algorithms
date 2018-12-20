@@ -12,6 +12,15 @@ public class Main {
         tree.insert(26);
         tree.insert(43);
         tree.insert(22);
+        System.out.println("Inorder Traversal(Sorted Traversal)");
+        tree.inorder();
+        System.out.println();
+        System.out.println("Preorder Traversal");
+        tree.preorder();
+        System.out.println();
+        System.out.println("Postorder Traversal");
+        tree.postorder();
+        System.out.println();
     }
 
 }
