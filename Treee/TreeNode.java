@@ -50,8 +50,38 @@ public class TreeNode {
         if(right != null) right.postorder();
         System.out.print(data + ",");
     }
+    public TreeNode get(int value) {
+        if(value == data) {
+            return this;
+        }
+        if(value < data) {
+            //left jaao
+            if(left != null) {
+               return left.get(value);
+            }
+        }else {
+            //right jaao
+            if(right != null) {
+               return right.get(value);
+            }
+        }
+        return null;
+    }
 
-
+    public int min() {
+        if(left != null) {
+            return left.min();
+        }else{
+            return data;
+        }
+    }
+    public int max() {
+        if(right != null) {
+            return right.max();
+        }else {
+            return data;
+        }
+    }
     public TreeNode(int data) {
         this.data = data;
     }

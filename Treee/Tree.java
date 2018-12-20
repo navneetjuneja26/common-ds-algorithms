@@ -28,5 +28,24 @@ public class Tree {
             root.postorder();
         }
     }
-
+    public TreeNode get(int value) {
+        if(root != null) {
+            return root.get(value);
+        }
+        return null;
+    }
+    public int min() {
+        if(root != null) {
+            return root.min();
+        }else {
+            return Integer.MIN_VALUE;
+        }
+    }
+    public int max() {
+        if(root != null) {
+            return root.max();
+        }else {
+            return Integer.MAX_VALUE;
+        }
+    }
 }

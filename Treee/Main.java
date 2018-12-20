@@ -21,6 +21,14 @@ public class Main {
         System.out.println("Postorder Traversal");
         tree.postorder();
         System.out.println();
+        System.out.println(tree.get(7));
+        System.out.println(tree.get(29));
+        System.out.println(tree.get(211));
+        System.out.println();
+        System.out.println("The min element in the tree is");
+        System.out.println(tree.min());
+        System.out.println("The maximum element in the tree is");
+        System.out.println(tree.max());
     }
 
 }
